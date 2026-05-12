@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import CompanyStory from "@/components/about/CompanyStory";
 import MissionValues from "@/components/about/MissionValues";
-import TeamSection from "@/components/about/TeamSection";
 
 export const metadata: Metadata = {
   title: "About Us",

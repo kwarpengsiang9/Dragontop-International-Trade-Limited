@@ -7,7 +7,8 @@
       "Bash(git *)",
       "Bash(brew install *)",
       "Bash(/opt/homebrew/bin/brew install *)",
-      "Bash(/opt/homebrew/bin/gh auth *)"
+      "Bash(/opt/homebrew/bin/gh auth *)",
+      "Bash(/opt/homebrew/bin/jq *)"
     ]
   }
 }
