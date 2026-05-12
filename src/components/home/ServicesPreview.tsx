@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SectionHeader from "@/components/ui/SectionHeader";
+import { ServiceIcon } from "@/components/ui/ServiceIcons";
 import { services } from "@/data/services";
 
 export default function ServicesPreview() {
@@ -16,9 +17,11 @@ export default function ServicesPreview() {
           {preview.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-xl p-6 border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
+              <div className="w-14 h-14 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-5 text-brand-blue">
+                <ServiceIcon id={service.id} />
+              </div>
               <h3 className="font-semibold text-brand-navy text-lg mb-2">{service.title}</h3>
               <p className="text-slate-600 text-sm leading-relaxed">{service.description}</p>
             </div>
